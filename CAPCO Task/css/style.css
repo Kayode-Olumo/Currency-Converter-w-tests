@@ -1,0 +1,30 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    width: 600px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.content-box{
+    margin: auto;
+}
+
+.btn-container{
+    width: 100%;
+}
+
+.swap-btn{
+    font-size: 16px;
+    font-weight: bold;
+    background: #0ce2ad;
+    border: none;
+    min-width: 200px;
+    margin: 0 auto;
+}

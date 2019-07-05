@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+    <title>CAPCO | Currency Conversion</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kayode Olumo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="convertCur();">
+    <div class="container">
+        <h2>Currency Conversion</h2>
+        <div class="content-box">
+            <div>
+                <input id="fromAmount" type="text" value="0" size="14" autofocus class="form-control" onkeyup="convertCur();">
+                <select id="from" class="form-control" onchange="convertCur();">
+                    <option value="EUR" selected>EUR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+            <div>
+                <input id="toAmount" type="text" size="14" autofocus class="form-control" disabled>
+                <select id="to" class="form-control "onchange="convertCur();">
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD" selected>USD</option>
+                </select>
+            </div>
+            <div class="btn-container">
+                <button id="swapBtn" class="btn btn-default swap-btn" onclick="swap(),convertCur()">Swap</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
